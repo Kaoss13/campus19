@@ -2,17 +2,14 @@
 
 int main(){
     void ft_is_negative(int);
-    ft_is_negative(-10);
+    ft_is_negative(0);
     return 0;
 }
 
 void ft_is_negative(int n){
-    char c;
-    if (n >= 0){
-        c = 'P';
-    }
-    else{
-        c = 'N';
-    }
-    write (1, &c, 1);
+    if (n >= 0)
+        write(1, "P",1);
+    else
+        write(1, "N", 1);
+    
 }

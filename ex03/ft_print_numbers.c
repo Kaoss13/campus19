@@ -7,10 +7,5 @@ int main(){
 }
 
 void ft_print_numbers(void){
-    char tab [9];
-    for (int i = 0; i < 10; i++){
-        tab[i] = (i +'0');
-        write(1, &tab[i], 1);
-        write(1, "\n", 1);
-    }
+    write(1, "0123456789", 10);
 }
